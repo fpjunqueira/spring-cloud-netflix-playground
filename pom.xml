@@ -13,6 +13,7 @@
 
     <modules>
 		<module>config-server</module>
-    </modules>	
+		<module>config-client</module>
+	</modules>
 
 </project>
