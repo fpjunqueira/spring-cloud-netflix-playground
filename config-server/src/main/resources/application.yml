@@ -4,10 +4,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/fpjunqueira/spring-cloud-netflix-skeleton
-          searchPaths: ConfigData
+          uri: https://github.com/fpjunqueira/spring-cloud-netflix-skeleton/src/main/resources/
+        #  searchPaths: ConfigData
         # "native" is used when the native profile is active, for local tests with a classpath repo:
-        native:
-          searchLocations: classpath:offline-repository/
+        #native:
+        #  searchLocations: classpath:offline-repository/
 server:
   port: 8001
