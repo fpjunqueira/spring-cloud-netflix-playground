@@ -4,6 +4,8 @@ A simple eureka client that registers itself to the eureka server.
 
 Connects to server to register and obtain information on other clients using their application's name.
 
+This example stands up one instance within a random port and the web method returns your own location. 
+
 **Config First Boostrap**
 
 If a client uses a Spring Cloud Config Server and also uses a Spring Cloud Eureka Server it will first 
