@@ -25,4 +25,9 @@ public class WebController {
         return "service not registered";
     }
 
+    @GetMapping("/service-instances/{appName}")
+    public @ResponseBody List<ServiceInstance> getServiceInstances(@PathVariable  String appName) {
+        return discoveryClient.getInstances(appName);
+    }
+
 }
