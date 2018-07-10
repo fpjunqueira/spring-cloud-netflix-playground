@@ -3,6 +3,3 @@
 */target
 *.iml
 */*.iml
-*/mvnw 
-*/mvnw.cmd
-*/.mvn

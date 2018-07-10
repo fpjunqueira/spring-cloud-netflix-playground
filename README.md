@@ -6,14 +6,13 @@ _A skeleton to support microservices projects based on spring cloud netflix._
 
 The intention of this project is to provide with a help of Spring Cloud Netflix a basic configuration of the main communication patterns between micro-services such as API gateway (Zull), service discovery (Eureka), circuit breaker (Hystrix) and load balancer (Ribbon), as well as a configuration server module (Spring Cloud Config) and another module for authentication based on OAuth2.
 
-**RUN**
+**Build Projects**
 
-`& mvn clean spring-boot:run`
+`$ ./mvnw clean install
+`
 
 **TODO**
 
-- Config Server
-- Config Client
 - Eureka
 - Ribbon
 - Hystrix
