@@ -40,4 +40,4 @@ Use _spring.cloud.config.discovery.enabled=true_ and _eureka.client.serviceUrl.d
 - get eureka.client.serviceUrl.defaultZone from config-server
 - run multiple Eureka Servers (profile)
 - instructions to test each profile
-- instructions to running multiple instances of same client (manual scalling)
+- instructions to running multiple instances of the same client (manual scalling)
