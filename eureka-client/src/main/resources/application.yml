@@ -4,9 +4,16 @@ spring:
     name: eureka-client
 
 eureka:
+  #Necessary to run multiple instances of client (scaling)
+  instance:
+    instance-id: ${random.value}
   client:
+    register-with-eureka: true
+    fetch-registry: true
+    registry-fetch-interval-seconds: 30
     serviceUrl:
       defaultZone: http://localhost:8010/eureka/
-#      defaultZone: http://localhost:8011/eureka/,http://localhost:8012/eureka/,http://localhost:8013/eureka/
+      #Multiple instances of eureka
+      #defaultZone: http://localhost:8011/eureka/,http://localhost:8012/eureka/,http://localhost:8013/eureka/
 server:
-  port: ${PORT:${SERVER_PORT:0}}
+  port: 0
