@@ -6,7 +6,7 @@ spring:
 eureka:
   #Necessary to run multiple instances of client (scaling)
   instance:
-    instance-id: ${random.value}
+    instance-id: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     register-with-eureka: true
     fetch-registry: true
