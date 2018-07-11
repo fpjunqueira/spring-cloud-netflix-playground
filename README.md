@@ -1,4 +1,4 @@
-# Spring Cloud Netflix Skeleton
+# Spring Cloud Netflix Playground
 
 [![Build Status](https://travis-ci.org/fpjunqueira/spring-cloud-netflix-skeleton.svg?branch=master)](https://travis-ci.org/fpjunqueira/spring-cloud-netflix-skeleton)
 
@@ -13,16 +13,13 @@ The intention of this project is to provide with a help of Spring Cloud Netflix 
 
 **TODO**
 
-- Eureka
-- Ribbon
 - Hystrix
 - Feign
 - Zuul
 - Swagger
+- Oauth2 
 - Sleuth
 - Zipkin
 - Hystrix Dashboard
 - Turbine
-- Srping Boot Admin
-- Oauth2 
-- JWT
+- Spring Boot Admin
