@@ -1,6 +1,6 @@
 # Spring Cloud Netflix Playground
 
-[![Build Status](https://travis-ci.org/fpjunqueira/spring-cloud-netflix-playground.svg?branch=master)](https://travis-ci.org/fpjunqueira/spring-cloud-netflix-skeleton)
+[![Build Status](https://travis-ci.org/fpjunqueira/spring-cloud-netflix-playground.svg?branch=master)](https://travis-ci.org/fpjunqueira/spring-cloud-netflix-playground)
 
 _A playground to support microservices projects based on spring cloud netflix._
 
