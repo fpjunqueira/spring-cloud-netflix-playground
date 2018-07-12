@@ -30,7 +30,7 @@
    state:null,
    propertySources:[  
       {  
-         name:"https://github.com/fpjunqueira/spring-cloud-netflix-skeleton/config-server/config/config-client.yml",
+         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/config-server/config/config-client.yml",
          source:{  
             message:"hello world"
          }
@@ -54,13 +54,13 @@
    state:null,
    propertySources:[  
       {  
-         name:"https://github.com/fpjunqueira/spring-cloud-netflix-skeleton/config-server/config/config-client-dev.yml",
+         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/config-server/config/config-client-dev.yml",
          source:{  
             message:"hello from dev profile"
          }
       },
       {  
-         name:"https://github.com/fpjunqueira/spring-cloud-netflix-skeleton/config-server/config/config-client.yml",
+         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/config-server/config/config-client.yml",
          source:{  
             message:"hello world"
          }
@@ -84,13 +84,13 @@
    state:null,
    propertySources:[  
       {  
-         name:"https://github.com/fpjunqueira/spring-cloud-netflix-skeleton/config-server/config/config-client-qa.yml",
+         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/config-server/config/config-client-qa.yml",
          source:{  
             message:"hello hello from qa profile"
          }
       },
       {  
-         name:"https://github.com/fpjunqueira/spring-cloud-netflix-skeleton/config-server/config/config-client.yml",
+         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/config-server/config/config-client.yml",
          source:{  
             message:"hello world"
          }
@@ -113,13 +113,13 @@
    state:null,
    propertySources:[  
       {  
-         name:"https://github.com/fpjunqueira/spring-cloud-netflix-skeleton/config-server/config/config-client-prod.yml",
+         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/config-server/config/config-client-prod.yml",
          source:{  
             message:"hello from prod profile"
          }
       },
       {  
-         name:"https://github.com/fpjunqueira/spring-cloud-netflix-skeleton/config-server/config/config-client.yml",
+         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/config-server/config/config-client.yml",
          source:{  
             message:"hello world"
          }
