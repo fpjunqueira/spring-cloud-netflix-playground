@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/fpjunqueira/spring-cloud-netflix-playground.svg?branch=master)](https://travis-ci.org/fpjunqueira/spring-cloud-netflix-playground)
 
-_A playground to support microservices projects based on spring cloud netflix._
+_Just playing around microservices based on spring-cloud-netflix_
 
 The intention of this project is to provide with a help of Spring Cloud Netflix a basic configuration of the main communication patterns between micro-services such as API gateway (Zull), service discovery (Eureka), circuit breaker (Hystrix) and load balancer (Ribbon), as well as a configuration server module (Spring Cloud Config) and another module for authentication based on OAuth2.
 
