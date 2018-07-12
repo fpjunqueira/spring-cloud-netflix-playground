@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.pexper.springcloudskeleton</groupId>
-	<artifactId>spring-cloud-netflix-skeleton</artifactId>
+	<groupId>com.pexper.springcloudplayground</groupId>
+	<artifactId>spring-cloud-netflix-playground</artifactId>
 	<version>1</version>
 	<packaging>pom</packaging>
 
-	<name>spring-cloud-netflix-skeleton</name>
-	<description>Spring Cloud Netflix Skeleton</description>
+	<name>spring-cloud-netflix-playground</name>
+	<description>Spring Cloud Netflix Playground</description>
 
     <modules>
 		<module>config-server</module>
@@ -17,6 +17,7 @@
 		<module>eureka-server</module>
 		<module>eureka-client</module>
 		<module>ribbon-client</module>
+		<module>feign-client</module>
 	</modules>
 
 </project>
