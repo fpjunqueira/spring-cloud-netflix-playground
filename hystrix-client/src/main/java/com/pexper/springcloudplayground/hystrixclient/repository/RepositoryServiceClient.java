@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(name = "eureka-client")
 public interface RepositoryServiceClient {
 
-    @GetMapping("/repository-uri/{appName}")
+    @GetMapping("/service-uri/{appName}")
     String getServiceURL(@PathVariable("appName") String appName);
 
 }
