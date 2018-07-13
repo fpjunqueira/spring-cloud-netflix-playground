@@ -11,14 +11,28 @@ The intention of this project is to provide with a help of Spring Cloud Netflix 
 `$ ./mvnw clean install
 `
 
-**TODO**
+**TODO Modules**
 
-- Hystrix
 - Zuul
 - Swagger
+- Server A
+- Server B
 - Oauth2 
 - Sleuth
 - Zipkin
-- Hystrix Dashboard
 - Turbine
 - Spring Boot Admin
+
+**TODO Readme**
+
+1. Server A
+2. Server B
+3. Register both servers in eureka
+4. Intercomunicate with feign calls
+5. Enable Ribbon Client
+6. Enable Hystrix
+7. Config Zull Gateway
+8. Config swagger
+9. Eureka dashboard Image/link
+10. Zull dashboard Image/link
+11. Swagger Image/link
