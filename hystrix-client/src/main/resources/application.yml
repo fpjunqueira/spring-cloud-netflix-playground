@@ -9,3 +9,11 @@ eureka:
       defaultZone: http://localhost:8010/eureka/
 server:
   port: 8040
+
+
+# allow Actuator to expose the Hystrix stream
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream

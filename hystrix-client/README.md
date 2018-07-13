@@ -16,8 +16,23 @@ Circuit Breaker with Netflix Hystrix
 `$ ./mvnw spring-boot:run
 `
 
+**Hystrix Dashboard**
+
+On: 
+
+http://localhost:8040/hystrix
+
+Put: 
+
+http://localhost:8040/actuator/hystrix.stream into the input text...
+ 
+and click to:
+ 
+_Monitor System_
+
+
+
 **TODO**
 
 - Instructions to test 
-- Link do hystrix dashboard
-- Link to Turbine
+- Turbine
