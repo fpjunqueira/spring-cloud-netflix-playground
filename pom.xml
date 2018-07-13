@@ -18,6 +18,7 @@
 		<module>eureka-client</module>
 		<module>ribbon-client</module>
 		<module>feign-client</module>
+		<module>hystrix-client</module>
 	</modules>
 
 </project>

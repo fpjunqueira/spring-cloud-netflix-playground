@@ -1,4 +1,4 @@
-package com.pexper.springcloudplayground.feignclient.repository;
+package com.pexper.springcloudplayground.hystrixclient.repository;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
