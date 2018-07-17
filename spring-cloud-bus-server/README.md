@@ -43,9 +43,9 @@ Run the config server:
    state:null,
    propertySources:[  
       {  
-         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/config-server/config/config-client.yml",
+         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/spring-cloud-bus-server/config/config-client.yml",
          source:{  
-            message:"hello world"
+            message:"hello spring cloud bus"
          }
       }
    ]
@@ -67,15 +67,15 @@ Run the config server:
    state:null,
    propertySources:[  
       {  
-         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/config-server/config/config-client-dev.yml",
+         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/spring-cloud-bus-server/config/config-client-dev.yml",
          source:{  
-            message:"hello from dev profile"
+            message:"hello spring cloud bus from dev profile"
          }
       },
       {  
-         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/config-server/config/config-client.yml",
+         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/spring-cloud-bus-server/config/config-client.yml",
          source:{  
-            message:"hello world"
+            message:"hello spring cloud bus"
          }
       }
    ]
@@ -97,15 +97,15 @@ Run the config server:
    state:null,
    propertySources:[  
       {  
-         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/config-server/config/config-client-qa.yml",
+         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/spring-cloud-bus-server/config/config-client-qa.yml",
          source:{  
-            message:"hello hello from qa profile"
+            message:"hello spring cloud bus from qa profile"
          }
       },
       {  
-         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/config-server/config/config-client.yml",
+         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/spring-cloud-bus-server/config/config-client.yml",
          source:{  
-            message:"hello world"
+            message:"hello spring cloud bus"
          }
       }
    ]
@@ -126,23 +126,29 @@ Run the config server:
    state:null,
    propertySources:[  
       {  
-         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/config-server/config/config-client-prod.yml",
+         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/spring-cloud-bus-server/config/config-client-prod.yml",
          source:{  
-            message:"hello from prod profile"
+            message:"hello spring cloud bus from prod profile"
          }
       },
       {  
-         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/config-server/config/config-client.yml",
+         name:"https://github.com/fpjunqueira/spring-cloud-netflix-playground/spring-cloud-bus-server/config/config-client.yml",
          source:{  
-            message:"hello world"
+            message:"hello spring cloud bus"
          }
       }
    ]
 }
 ```
 
-**TODO**
+**Refresh Clients** <br>
 
-POST http://server:port/bus/refresh
+Refresh config-clients after commit changes on config-server:
+
+`$ curl --request POST http://localhost:8002/actuator/bus-refresh
+`
+
+
+**TODO**
 
 -> post changes to a specific client
