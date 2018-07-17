@@ -15,11 +15,19 @@ A simple client that dynamically retrivies a message from config-server with a l
 
 ```
 $ curl http://localhost:8080/message
-hello world
+hello spring cloud bus
 ```
 
-Before commited changes in defaul profile on config-server:
-https://github.com/fpjunqueira/spring-cloud-netflix-playground/spring-cloud-bus-server/config/config-client.yml
+Commit changes in default profile on config-server:
+
+_/spring-cloud-netflix-playground/spring-cloud-bus-server/config/config-client.yml_
+
+Before: <br>
+_message: hello spring cloud bus_
+
+After: <br>
+_message: hello spring cloud bus with some changes !!!_
+
 
 ```
 $ git add . && git commit -m"Testing Config Changes" && git push origin master
@@ -27,7 +35,7 @@ $ git add . && git commit -m"Testing Config Changes" && git push origin master
 $ curl --request POST http://localhost:8002/actuator/bus-refresh
 
 $ curl http://localhost:8080/message
-hello world
+hello spring cloud bus with some changes !!!
 ```
 
 
@@ -38,7 +46,7 @@ hello world
 
 ```
 $ curl http://localhost:8080/message
-hello from dev profile
+hello spring cloud bus from dev profile
 ```
 
 **Retrive message based on QA profile:**<br>
@@ -47,7 +55,7 @@ hello from dev profile
 
 ```
 $ curl http://localhost:8080/message
-hello hello from qa profile
+hello spring cloud bus from qa profile
 ```
 
 **Retrive message based on PROD profile**:<br>
@@ -56,6 +64,6 @@ hello hello from qa profile
 
 ```
 $ curl http://localhost:8080/message
-hello from prod profile
+hello spring cloud bus from prod profile
 ```
 
