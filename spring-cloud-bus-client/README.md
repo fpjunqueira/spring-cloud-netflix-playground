@@ -1,6 +1,6 @@
-# Spring Cloud Config Client
+# Spring Cloud Bus Client
 
-A simple client that retrivies a message from config-server based on his profile.
+A simple client that dynamically retrivies a message from config-server with a little help from spring cloud bus and amqp messaging.
 
 **RUN**
 
@@ -17,6 +17,20 @@ A simple client that retrivies a message from config-server based on his profile
 $ curl http://localhost:8080/message
 hello world
 ```
+
+Before commited changes in defaul profile on config-server:
+https://github.com/fpjunqueira/spring-cloud-netflix-playground/spring-cloud-bus-server/config/config-client.yml
+
+```
+$ git add . && git commit -m"Testing Config Changes" && git push origin master
+
+$ curl --request POST http://localhost:8002/actuator/bus-refresh
+
+$ curl http://localhost:8080/message
+hello world
+```
+
+
 
 **Retrive message based on DEV profile:**<br>
 `$ ./mvnw clean spring-boot:run -Dspring.profiles.active=dev
@@ -45,9 +59,3 @@ $ curl http://localhost:8080/message
 hello from prod profile
 ```
 
-**Refresh Client** <br>
-
-Refresh config-client after commit changes on config-server:
-
-`$ curl localhost:8080/actuator/refresh -d {} -H "Content-Type: application/json"
-`
