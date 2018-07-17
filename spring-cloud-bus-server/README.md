@@ -19,7 +19,7 @@ Starter: _spring-cloud-config-bus-amqp_
 
 Run RabbitMQ with docker:
 
-`$ docker run rabbitmq`
+`$ docker run -p 5672:5672 rabbitmq`
 
 Run the config server:
 
