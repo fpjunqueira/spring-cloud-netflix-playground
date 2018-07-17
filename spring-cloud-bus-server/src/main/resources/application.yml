@@ -8,3 +8,5 @@ spring:
           searchPaths: spring-cloud-bus-server/config
 server:
   port: 8002
+
+management.endpoints.web.exposure.include: bus-refresh
