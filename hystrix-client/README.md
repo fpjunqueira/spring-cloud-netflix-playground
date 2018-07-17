@@ -34,5 +34,5 @@ _Monitor System_
 
 **TODO**
 
-- Instructions to test 
+- Instructions to test (run eureka clients to close circuit and stop to open circuits)
 - Turbine

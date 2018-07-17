@@ -19,6 +19,8 @@
 		<module>ribbon-client</module>
 		<module>feign-client</module>
 		<module>hystrix-client</module>
+		<module>spring-cloud-bus-client</module>
+		<module>spring-cloud-bus-server</module>
 	</modules>
 
 </project>
