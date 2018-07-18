@@ -1,6 +1,6 @@
 # Spring Cloud Bus Client
 
-A simple client that dynamically retrivies a message from config-server with a little help from spring cloud bus and amqp messaging.
+A simple client that dynamically retrivies a message from config-server with a little help from spring cloud bus and ampq messaging.
 
 **RUN**
 
