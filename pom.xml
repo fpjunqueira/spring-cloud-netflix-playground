@@ -21,6 +21,7 @@
 		<module>hystrix-client</module>
 		<module>spring-cloud-bus-client</module>
 		<module>spring-cloud-bus-server</module>
+		<module>zull-api-gateway</module>
 	</modules>
 
 </project>
