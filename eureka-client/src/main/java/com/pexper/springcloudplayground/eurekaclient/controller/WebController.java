@@ -1,5 +1,7 @@
 package com.pexper.springcloudplayground.eurekaclient.controller;
 
+import com.netflix.appinfo.InstanceInfo;
+import com.netflix.discovery.DiscoveryManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -28,6 +30,15 @@ public class WebController {
     @GetMapping("/service-instances/{appName}")
     public @ResponseBody List<ServiceInstance> getServiceInstances(@PathVariable  String appName) {
         return discoveryClient.getInstances(appName);
+    }
+
+    @GetMapping("/service-instances/balanced/{appName}")
+    public @ResponseBody String ribbonTest(@PathVariable  String appName) {
+        InstanceInfo nextServerInfo = DiscoveryManager.getInstance()
+                .getDiscoveryClient()
+                .getNextServerFromEureka(appName, false);
+
+        return nextServerInfo.getHostName() + ":" +  nextServerInfo.getPort();
     }
 
 }
