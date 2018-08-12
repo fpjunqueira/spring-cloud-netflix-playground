@@ -23,7 +23,7 @@ The intention of this project is to provide with a help of Spring Cloud Netflix 
 - Turbine
 - Spring Boot Admin
 
-**TODO Readme**
+**TODO**
 
 1. Server A
 2. Server B
@@ -36,3 +36,4 @@ The intention of this project is to provide with a help of Spring Cloud Netflix 
 9. Eureka dashboard Image/link
 10. Zull dashboard Image/link
 11. Swagger Image/link
+12. Docker Compose
