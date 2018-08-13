@@ -13,7 +13,6 @@ The intention of this project is to provide with a help of Spring Cloud Netflix 
 
 **TODO Modules**
 
-- Zuul
 - Swagger
 - Server A
 - Server B
