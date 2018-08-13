@@ -35,9 +35,21 @@ Use _spring.cloud.config.discovery.enabled=true_ and _eureka.client.serviceUrl.d
 `$ ./mvnw spring-boot:run
 `
 
+**Docker**
+
+See: (application.yml) defaultZone: http://eureka-server:8010/eureka/ -> get eureka from config server to set it
+
+`$ docker network create --driver bridge spring-cloud-network
+`
+
+`$ docker build -f Dockerfile -t fjunqueira/spring-cloud-playground-eureka-client .
+`
+
+`$ docker run --network spring-cloud-network fjunqueira/spring-cloud-playground-eureka-client
+`
+
 **TODO**
 
 - get eureka.client.serviceUrl.defaultZone from config-server
 - run multiple Eureka Servers (profile)
 - instructions to test each profile
-- instructions to running multiple instances of the same client (manual scalling)

@@ -31,8 +31,20 @@ and click to:
 _Monitor System_
 
 
+**Docker**
+
+`$ docker network create --driver bridge spring-cloud-network
+`
+
+`$ docker build -f Dockerfile -t fjunqueira/spring-cloud-playground-hystrix-client .
+`
+
+`$ docker run -it --name hystrix-client --network spring-cloud-network fjunqueira/spring-cloud-playground-hystrix-client
+`
+
 
 **TODO**
 
-- Instructions to test (run eureka clients to close circuit and stop to open circuits)
+- Instructions to test (/eureka-client-repository-url/eureka-client)
+- run eureka clients to close circuit and stop to open circuits
 - Turbine

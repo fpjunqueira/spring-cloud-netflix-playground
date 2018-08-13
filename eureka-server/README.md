@@ -39,6 +39,17 @@ https://github.com/Netflix/eureka/wiki/Configuring-Eureka
 
 http://localhost:8010/
 
+**Docker**
+
+`$ docker network create --driver bridge spring-cloud-network
+`
+
+`$ docker build -f Dockerfile -t fjunqueira/spring-cloud-playground-eureka-server .
+`
+
+`$ docker run -it --name eureka-server -p 8010:8010 --network spring-cloud-network fjunqueira/spring-cloud-playground-eureka-server
+`
+
 
 **TODO**
 

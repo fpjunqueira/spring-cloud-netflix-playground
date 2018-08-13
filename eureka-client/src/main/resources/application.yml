@@ -12,7 +12,12 @@ eureka:
     fetch-registry: true
     registry-fetch-interval-seconds: 30
     serviceUrl:
-      defaultZone: http://localhost:8010/eureka/
+      #defaultZone: http://localhost:8010/eureka/
+
+      #docker test
+      # --name eureka-server
+      defaultZone: http://eureka-server:8010/eureka/
+
       #Multiple instances of eureka
       #defaultZone: http://localhost:8011/eureka/,http://localhost:8012/eureka/,http://localhost:8013/eureka/
 server:

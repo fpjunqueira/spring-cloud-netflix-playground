@@ -6,7 +6,12 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8010/eureka/
+      #defaultZone: http://localhost:8010/eureka/
+
+      #docker test
+      # --name eureka-server
+      defaultZone: http://eureka-server:8010/eureka/
+
 server:
   port: 8040
 

@@ -1,0 +1,23 @@
+spring:
+  profiles: default
+  application:
+    name: zuul-api-gateway
+
+eureka:
+  client:
+    serviceUrl:
+      # defaultZone: http://localhost:8010/eureka/
+
+      #docker test
+      # --name eureka-server
+      defaultZone: http://eureka-server:8010/eureka/
+
+server:
+  port: 8080
+
+zuul:
+  prefix: /api
+  ignored-services: eureka-client
+  routes:
+    hystrix-client:
+      path: /hystrix-service/**
