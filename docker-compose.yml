@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+  eureka-server:
+    image: fjunqueira/spring-cloud-playground-eureka-server
+    ports:
+      - 8010:8010
+    networks:
+      - spring-cloud-bridge-network
+
+  eureka-client:
+    image: fjunqueira/spring-cloud-playground-eureka-client
+    networks:
+      - spring-cloud-bridge-network
+    depends_on:
+      - eureka-server
+
+  hystrix-client:
+    image: fjunqueira/spring-cloud-playground-hystrix-client
+    networks:
+      - spring-cloud-bridge-network
+    depends_on:
+      - eureka-server
+
+  zull-gateway-api:
+    image: fjunqueira/spring-cloud-playground-zuul-gateway-api
+    ports:
+      - 8080:8080
+    networks:
+      - spring-cloud-bridge-network
+    depends_on:
+      - eureka-server
+
+networks:
+  spring-cloud-bridge-network:
+    driver: bridge
+
+# TODO:
+#   -Dspring.active.profile=docker
+#   docker-compose build
+#   expose hystrix dashboard port
+#   spring cloud bus docker-compose
+#   rabbit-mq docker-compose
+
+# -> docker-compose scale eureka-client=2
+# WARNING: The scale command is deprecated. Use the up command with the --scale flag instead.
