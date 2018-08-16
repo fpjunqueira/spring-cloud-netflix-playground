@@ -15,6 +15,12 @@ The intention of this project is to provide with a help of Spring Cloud Netflix 
 
 `$ docker-compose up --scale eureka-client=2`
 
+`$ curl http://localhost:8080/api/hystrix-service/eureka-client-repository-url/eureka-client`
+
+**Eureka Dashboard**
+
+http://localhost:8010/
+
 
 **TODO Modules**
 
