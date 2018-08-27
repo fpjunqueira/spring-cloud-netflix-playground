@@ -56,6 +56,7 @@ http://localhost:8010/
 - rabbit-mq docker-compose
 - push to dockerhub
 - docker mvn plugin
+- eureka-server multiple regions (profiles)
 
 **Cloud**
 
