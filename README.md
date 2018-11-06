@@ -32,6 +32,8 @@ http://localhost:8010/
 - Zipkin
 - Turbine
 - Spring Boot Admin
+- Graphana
+- Consul
 
 **TODO Resources**
 
@@ -49,7 +51,8 @@ http://localhost:8010/
 
 **TODO Docker Compose**
 
-- Dspring.active.profile=docker
+- Dspring.active.profile=docker (changes eureka and config hosts)
+- Profile eureka and Profile Consul
 - docker-compose build
 - expose hystrix dashboard port
 - spring cloud bus docker-compose
